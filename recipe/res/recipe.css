@@ -1,5 +1,5 @@
 body {
-    background-image: url("res/images/silverware.jpg");
+    background-image: url("images/silverware.jpg");
 }
 h2 {
     color: #A4A400 ;
@@ -23,5 +23,5 @@ h2.title {
     font-style: italic;
 }
 ul li {
-    list-style-image: url("res/images/pie_icon.gif");
+    list-style-image: url("images/pie_icon.gif");
 }
