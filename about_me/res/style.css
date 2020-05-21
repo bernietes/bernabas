@@ -9,4 +9,18 @@ h1 , h2 {
 p,li {
     color: white;
 }
+p::first-letter{
+
+    font-size: 150%;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: red;
+}
+strong,dt {
+    color: yellow;
+}
 
