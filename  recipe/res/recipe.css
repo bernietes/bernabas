@@ -1,0 +1,27 @@
+body {
+    background-image: url("images/silverware.jpg");
+}
+h2 {
+    color: #A4A400 ;
+    text-decoration: underline  ;
+
+    font-family: "Lucida Sans Unicode",Helvetica ,Arial,sans-serif ;
+    font-size: 18pt;
+
+}
+h2 span {
+    background-color:#F0F0F0;
+}
+h2.title {
+    text-align: center;
+    font-size: 22pt;
+}
+.comment {
+    background-color: #FFFFA8 ;
+    color: darkslategrey;
+    margin-left: 50px;
+    font-style: italic;
+}
+ul li {
+    list-style-image: url("images/pie_icon.gif");
+}
