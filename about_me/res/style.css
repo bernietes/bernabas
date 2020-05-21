@@ -1,0 +1,12 @@
+body {
+    background-color: cadetblue;
+}
+h1 , h2 {
+    color: darkred;
+    font-family: "Arial Black";
+
+}
+p,li {
+    color: white;
+}
+
