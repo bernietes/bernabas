@@ -2,9 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML Form</title>
+    <link href="res/style.css" type="text/css" rel="stylesheet">
+    <!-- <link rel="icon" type="image/gif" href="res/images/pie_icon.gif"> -->
+
 </head>
 <body>
+
+<nav>
+    <ul>
+        <li><a href="#personal_detail">Personal Details</a></li>
+        <li><a href="#billing_address">Billing Address</a></li>
+        <li><a href="#shipping_address">Shipping Address</a></li>
+        <li><a href="#payment_info">Payment Information</a></li>
+    </ul>
+</nav>
+
+
+<div id="personal_detail">
+    <br> <br> <br> <br>
+    <h1> Personal Details</h1>
+    <div class="wrapper">
+
+            <h3>Fill Your Personal Informaion</h3>
+
+
+    <form action="#billing_address">
+        <p>
+            <label>First Name</label>
+            <input type="text" name="fname">
+        </p>
+        <p>
+            <label>Last Name</label>
+            <input type="text" name="lname">
+        </p>
+        <p>
+            <label>Date of Birth</label>
+
+            <input type="date" name="ssn">
+        </p>
+        <p>
+            <label>Zip</label>
+
+            <input type="number"  name="zip">
+        </p>
+        <p>
+
+            <label>SSN</label>
+            <input type="number"  name="ssn">
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" name="eamil">
+        </p>
+        <p>
+            <label>Phone Number</label>
+            <input type="tel" name="phone">
+        </p>
+        <br>
+        <p class="full">
+            <button  type="submit"> Next</button>
+        </p>
+    </form>
+    </div>
+
+</div>
+<div id="billing_address">
+    <br> <br> <br> <br>
+    <h1>Billing Adress</h1>
+    <div class="wrapper">
+
+        <h3>Fill Your Billing Address</h3>
+<br> <br>
+
+        <form action="#shipping_adress">
+
+            <p>
+                <label>Address Line 1</label>
+                <input type="text" name="fname">
+            </p>
+            <p>
+                <label>Address Line 2</label>
+                <input type="text"  name="lname">
+            </p>
+            <p>
+                <label>City</label>
+                <input type="text" name="lname">
+            </p>
+            <p>
+                <label>State / Province / Region</label>
+                <input type="text" name="lname">
+            </p>
+            <p>
+                <label>Zip</label>
+
+                <input type="number"  name="zip">
+            </p>
+
+
+            <p>
+                <label>Phone Number</label>
+                <input type="tel" name="phone">
+            </p>
+            <br>
+            <p class="full">
+               <button  type="submit"> Next</button>
+            </p>
+        </form>
+    </div>
+</div>
+<div id="shipping_address">
+    <br> <br> <br> <br>
+    <h1>Shipping Adress</h1>
+    <div class="wrapper">
+
+        <h3>Fill Your Shipping Address</h3>
+        <br> <br>
+
+        <form action="#payment_info">
+
+            <p>
+                <label>Address Line 1</label>
+                <input type="text" name="fname">
+            </p>
+            <p>
+                <label>Address Line 2</label>
+                <input type="text" name="lname">
+            </p>
+            <p>
+                <label>City</label>
+                <input type="text" name="lname">
+            </p>
+            <p>
+                <label>State / Province / Region</label>
+                <input type="text" name="lname">
+            </p>
+            <p>
+                <label>Zip</label>
+
+                <input type="number" name="zip">
+            </p>
+
+
+            <p>
+                <label>Phone Number</label>
+                <input type="tel" name="phone">
+            </p>
+            <br>
+            <p class="full">
+                <button  type="submit"> Next</button>
+            </p>
+        </form>
+    </div>
+</div>
+<div id="payment_info">
+    <br> <br> <br> <br>
+    <h1>Payment Address</h1>
+    <div class="wrapper">
+
+        <h3>Fill Your Shipping Address</h3>
+        <br> <br>
+
+        <form action="index.html">
+
+            <p>
+                <label>Name on card</label>
+                <input type="text" name="name_on_card">
+            </p>
+            <p>
+                <label>Card Number</label>
+                <input type="number" name="card_number">
+            </p>
+            <p>
+                <label>Expiration date</label>
+                <input type="date" name="lname">
+            </p>
+
+            <p>
+                <label>CVV</label>
+                <input type="number" name="lname">
+            </p>
+
+            <p>
+                <label>Phone Number</label>
+                <input type="tel" name="phone">
+            </p>
+            <br>
+            <p class="full">
+                <button  type="submit"> Submit</button>
+            </p>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
