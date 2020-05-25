@@ -30,26 +30,26 @@
     <form action="#billing_address">
         <p>
             <label>First Name</label>
-            <input type="text" name="fname">
+            <input type="text" required name="fname">
         </p>
         <p>
             <label>Last Name</label>
-            <input type="text" name="lname">
+            <input type="text" required name="lname">
         </p>
         <p>
             <label>Date of Birth</label>
 
-            <input type="date" name="ssn">
+            <input type="date"  name="dob">
         </p>
         <p>
             <label>Zip</label>
 
-            <input type="number"  name="zip">
+            <input type="number" pattern="^[1-9]{10}" name="zip">
         </p>
         <p>
 
             <label>SSN</label>
-            <input type="number"  name="ssn">
+            <input type="number"  required pattern="^[0-9]{10}" name="ssn">
         </p>
         <p>
             <label>Email</label>
@@ -167,25 +167,33 @@
 
             <p>
                 <label>Name on card</label>
-                <input type="text" name="name_on_card">
+                <input type="text" required name="name_on_card">
             </p>
             <p>
                 <label>Card Number</label>
-                <input type="number" name="card_number">
+                <input type="number" required name="card_number">
             </p>
             <p>
                 <label>Expiration date</label>
-                <input type="date" name="lname">
+                <input type="date" required name="lname">
             </p>
 
             <p>
                 <label>CVV</label>
-                <input type="number" name="lname">
+                <input type="number" required name="lname">
             </p>
 
             <p>
                 <label>Phone Number</label>
                 <input type="tel" name="phone">
+            </p>
+            <p>
+
+            </p>
+            <p class="full">
+                I agree to <a href="">terms and conditions</a>
+                <input type="radio" name="agree" required>
+
             </p>
             <br>
             <p class="full">
