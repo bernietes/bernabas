@@ -1,6 +1,6 @@
 
 function big_decoration(){
-    let textbox = document.getElementById("text_area");
+    let textbox = document.getElementById('text_area');
     textbox.style.fontSize = parseInt(textbox.style.fontSize) + 2 + "pt";
 
 }
