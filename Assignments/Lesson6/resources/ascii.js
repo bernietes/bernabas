@@ -13,22 +13,9 @@ stop.disabled = true;
 // Text size change
 size.onchange = function () {
     let font = size.value;
-    let font_size = 'opt';
-    if (font === 'tiny')
-        font_size = '7pt';
-    if (font === 'small')
-        font_size = '10pt';
-    if (font === 'medium')
-        font_size = '12pt';
-    if (font === 'large')
-        font_size = '16pt';
-    if (font === 'extraLarge')
-        font_size = '24pt';
-    if (font === 'xxl')
-        font_size = '32pt';
-
-    text_area.style.fontSize = font_size;
+    text_area.style.fontSize = font+'pt';
 }
+
 
 //Animation Selector
 
