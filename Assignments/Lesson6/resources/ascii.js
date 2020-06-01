@@ -35,7 +35,7 @@ animation.onchange = function () {
 start.onclick = startStarter;
 
 function starter() {
-    if (!sequence == '') {
+    if (!sequence === '') {
         stop.disabled = false;
         start.disabled = true;
         text_area.value = '';
