@@ -3,30 +3,45 @@ let accountInfoList = [];
 let accountModule = function () {
 
     let account = {
-        name:'',
+        name: '',
         balance: 0
     }
 
     let display = function () {
         let lineOutput = '';
         for (let i = 0; i < accountInfoList.length; i++) {
-            lineOutput += 'Account Name: ' + accountInfoList[i].name + ' Balance: ' + accountInfoList[i].balance + '\n ';
+
+            lineOutput += (function () {
+                return 'Account Name: ' + accountInfoList[i].name + ' Balance: ' + accountInfoList[i].balance + '\n ';
+            })(i);
         }
         document.getElementById('canvas').value = lineOutput;
+
     }
 
+
     let get = function () {
-        let name= document.getElementById('account_name').value;
-        let balance=document.getElementById('balance').value;
-        account.name =name;
+        let name = document.getElementById('account_name').value;
+        let balance = document.getElementById('balance').value;
+        account.name = name;
         account.balance = balance;
-        name='';
-        balance='';
+
     }
 
     let save = function () {
-        accountInfoList.push(account);
 
+      accountInfoList.push(
+          (function () {
+             const oneAccount ={
+                 name : account.name,
+                 balance :account.balance
+             }
+             return oneAccount;
+
+               })()
+
+
+          );
     }
 
 
