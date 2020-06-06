@@ -157,7 +157,7 @@ $(function(){
     $("#shufflebutton").click(function(){
         for(let i=0;i<1000;i++){
             let pos=Math.floor(Math.random() * tiles.length);
-            moveTiles(divs[pos]);
+            moveTiles(tiles[pos]);
         }
 
     });
