@@ -91,9 +91,6 @@ $(function(){
         }
         return true;
     }
-
-
-
     function moveTiles(ele){
         //check upward
         if(ele.y>0){
